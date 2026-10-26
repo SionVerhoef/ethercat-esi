@@ -1,6 +1,6 @@
 # ethercat-esi
 
-An agent skill for EtherCAT ESI device description files — reading and checking ESI XML, PDO mappings and CoE object dictionaries — and for finding out why a configuration doesn't match the device on the wire.
+An agent skill that answers exact EtherCAT device questions — CoE objects, data types, PDO mappings, supported CiA 402 modes, differences between firmware revisions — from the ESI files already on your machine, so the agent stops guessing them.
 
 **Status: early development.** Not ready to install yet.
 
