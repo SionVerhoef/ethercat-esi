@@ -12,6 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # The frontmatter is what decides whether the skill loads and triggers at all.
+      - name: SKILL.md frontmatter is valid
+        run: python3 scripts/check_skill.py
+
       # This repository is public: no real AMS NetId, IP or MAC address (see CLAUDE.md).
       - name: no real network identities committed
         run: python3 scripts/check_private.py
